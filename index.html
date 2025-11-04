@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karine Silva - Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Gradiente de fundo com tons de lilás/roxo claro */
+      body {
+        background: linear-gradient(-45deg, #f9f0fc, #f3e5f5, #fcf5f7, #f3e5f5);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl text-center max-w-lg w-full transform transition-all hover:shadow-2xl">
+        
+        <img 
+            src="https://github.com/KarineSilvaCodes.png" 
+            alt="Foto de Karine Silva" 
+            class="w-32 h-32 rounded-full mx-auto mb-5 border-4 border-purple-100 shadow-md"
+        >
+        
+        <h1 class="text-4xl font-bold text-purple-900 mb-2">
+            Karine Silva
+        </h1>
+        <p class="text-lg text-purple-700 opacity-75 mb-6">
+            Desenvolvedora & QA
+        </p>
+
+        <div class="space-y-4 mb-8">
+            <a href="/Curriculo_DEV/" 
+               class="flex items-center justify-center gap-3 bg-purple-600 text-white font-semibold py-3 px-5 rounded-lg hover:bg-purple-700 transition-colors text-lg w-full">
+               <i class="fas fa-code w-5"></i>
+               Currículo de Desenvolvedora
+            </a>
+            
+            <a href="/Curriculo_QA/" 
+               class="flex items-center justify-center gap-3 bg-pink-500 text-white font-semibold py-3 px-5 rounded-lg hover:bg-pink-600 transition-colors text-lg w-full">
+               <i class="fas fa-check-circle w-5"></i>
+               Currículo de QA (Quality Assurance)
+            </a>
+        </div>
+
+        <div class="flex justify-center gap-6">
+            <a href="https://linkedin.com/in/karine-silva-ks404" target="_blank" class="text-gray-400 hover:text-purple-600 transition-colors" title="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i> </a>
+            <a href="https://github.com/KarineSilvaCodes" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors" title="GitHub">
+                <i class="fab fa-github fa-2x"></i> </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

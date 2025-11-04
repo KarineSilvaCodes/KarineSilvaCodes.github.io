@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículo - Karine Silva (Dev Júnior)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f0fc 0%, #f3e5f5 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(186, 104, 200, 0.2);
+      border-radius: 15px;
+      overflow: hidden;
+      background: white;
+    }
+    .header {
+      background: linear-gradient(135deg, #ba68c8 0%, #8e24aa 100%);
+      color: white;
+      padding: 40px 40px 30px 40px;
+      text-align: center;
+    }
+    .section { padding: 25px 40px; border-bottom: 1px solid #f3e5f5; }
+    .section-title {
+      color: #8e24aa; font-weight: 600; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px; font-size: 1.25rem;
+    }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+    .skill-item, .course-item {
+      background: #f3e5f5; padding: 12px 15px; border-radius: 8px;
+      border-left: 4px solid #ba68c8; color: #6a1b9a; font-weight: 500;
+    }
+    .contact-item {
+      display: flex; align-items: center; gap: 10px; justify-content: center;
+      margin-bottom: 10px; font-weight: 500;
+    }
+    .contact-item i { color: #ce93d8; min-width: 20px; text-align: center; }
+    /* ESTILO ADICIONADO */
+    .contact-item a { color: white; text-decoration: none; }
+    .contact-item a:hover { text-decoration: underline; }
+
+    .education-box {
+      background: #f3e5f5; padding: 20px; border-radius: 12px; color: #6a1b9a; font-weight: 500;
+    }
+    .soft-skill {
+      background: #e1bee7; color: #4a148c; padding: 8px 16px;
+      border-radius: 20px; font-weight: 600; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text-center" style="max-width: 900px; margin: 0 auto 1rem auto;">
+    <button id="download-pdf" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors" style="background-color: #8e24aa;">
+      <i class="fas fa-download" style="margin-right: 8px;"></i> Baixar Versão em PDF
+    </button>
+  </div>
+
+  <div class="resume-container" id="resume">
+
+    <div class="header">
+      <h1 class="text-4xl font-bold">Karine Silva</h1>
+      <p class="text-xl opacity-90 mt-2 font-semibold">Desenvolvedora Júnior</p>
+      <div class="mt-6 flex flex-wrap sm:justify-center sm:gap-x-10 gap-x-4 gap-y-2">
+        <div class="contact-item"><i class="fas fa-phone"></i>
+            <a href="tel:+5521995025295">(21) 99747-3795</a>
+        </div>
+        <div class="contact-item"><i class="fas fa-envelope"></i>
+            <a href="mailto:karine.silvat.i23@gmail.com" class="hover:underline">karine.silvat.i23@gmail.com</a>
+        </div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
+            <span>Rio de Janeiro</span>
+        </div>
+        <div class="contact-item"><i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/karine-silva-ks404/" target="_blank" class="hover:underline">linkedin.com/in/karine-silva-ks404</a>
+        </div>
+        <div class="contact-item"><i class="fab fa-github"></i>
+            <a href="https://github.com/KarineSilvaCodes" target="_blank" class="hover:underline">github.com/KarineSilvaCodes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-bullseye"></i>Objetivo</h2>
+      <p class="text-gray-800">
+        Atuar como Desenvolvedora Júnior, aplicando conhecimentos em lógica de programação, desenvolvimento web e boas práticas de código. Busco contribuir em projetos reais, adquirindo experiência prática, desenvolvendo soluções eficientes e crescendo junto com a equipe e a empresa.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-graduation-cap"></i>Formação Acadêmica</h2>
+      <div class="education-box">
+        <h3 class="font-semibold text-lg">Análise e Desenvolvimento de Sistemas – Anhanguera Educacional</h3>
+        <p class="text-gray-600">08/2024 – Previsão de formatura: 01/2027</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-certificate"></i>Cursos e Certificações</h2>
+      <div class="space-y-3">
+        <div class="course-item">Full Stack – Lógica de Programação e Desenvolvimento</div>
+        <div class="course-item">Python – Intermediário</div>
+        <div class="course-item">JavaScript – Fundamentos e prática</div>
+        <div class="course-item">Git e GitHub – Controle de Versão</div>
+        <div class="course-item">Banco de Dados SQL – Noções práticas</div>
+        <div class="course-item">Java – Fundamentos e prática</div>
+        <div class="course-item">Fundamentos de Desenvolvimento Web (HTML, CSS, JS)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-tools"></i>Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-item">Front-End Web: HTML5, CSS3, JavaScript (ES6+)</div>
+        <div class="skill-item">Back-End (Noções): Python, Java</div>
+        <div class="skill-item">Bancos de Dados: MySQL, SQLite (DDL, DCL, TCL, Performance)</div>
+        <div class="skill-item">Versionamento com Git/GitHub</div>
+        <div class="skill-item">Arquitetura MVC (Noções)</div>
+        <div class="skill-item">Metodologias Ágeis (Noções de Scrum)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-brain"></i>Competências Comportamentais</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="soft-skill">Comunicação clara</span>
+        <span class="soft-skill">Colaboração em equipe</span>
+        <span class="soft-skill">Resolução de problemas</span>
+        <span class="soft-skill">Organização</span>
+        <span class="soft-skill">Proatividade</span>
+        <span class="soft-skill">Inglês intermediário</span>
+        <span class="soft-skill">Aprendizado rápido de novas linguagens</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title"><i class="fas fa-code"></i>Projetos Relevantes</h2>
+      
+      <div class="space-y-6">
+
+        <div>
+          <h3 class="font-semibold text-lg text-purple-800">
+            1. API RESTful de Gerenciamento (Projeto Pessoal)
+          </h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2 mt-2 pl-4">
+            <li>Desenvolvimento de uma API RESTful em <strong>Python</strong> para gerenciar operações <strong>CRUD</strong> (Create, Read, Update, Delete) de itens (ex: livros, tarefas).</li>
+            <li>Implementação de endpoints e integração com banco de dados <strong>SQLite</strong> (ou MySQL) para persistência de dados.</li>
+            <li><strong>Tecnologias:</strong> Python, Flask (ou Django), SQL, Git/GitHub.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg text-purple-800">
+            2. Website Interativo (Projeto Pessoal/Acadêmico)
+          </h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2 mt-2 pl-4">
+            <li>Criação de páginas web responsivas utilizando <strong>HTML5</strong>, <strong>CSS3</strong> (Flexbox/Grid) e <strong>JavaScript</strong>.</li>
+            <li>Foco na manipulação do DOM (ES6+) para criar interatividade, como formulários de validação, quizzes ou pequenos jogos.</li>
+            <li><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript (ES6+), Git/GitHub.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById('download-pdf').addEventListener('click', function () {
+      
+      const button = this;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 8px;"></i> Gerando PDF...';
+      button.disabled = true;
+
+      const element = document.getElementById('resume');
+      
+      const opt = {
+        margin:       [0.5, 0.5, 0.5, 0.5], // top, left, bottom, right
+        filename:     'Curriculo_Karine_Silva_DEV.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true, logging: false },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait', enableLinks: true },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+  
+      html2pdf().set(opt).from(element).save().then(function() {
+        // Reseta o botão
+        button.innerHTML = '<i class="fas fa-download" style="margin-right: 8px;"></i> Baixar Versão em PDF';
+        button.disabled = false;
+      });
+    });
+  </script>
+
+</body>
+</html>
