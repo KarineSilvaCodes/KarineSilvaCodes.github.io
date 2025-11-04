@@ -13,7 +13,6 @@ O site está hospedado com GitHub Pages e pode ser acessado por qualquer pessoa 
 [![Acessar Site](https://img.shields.io/badge/Acessar%20Site-KarineSilvaCodes.github.io-a726aD?style=for-the-badge&logo=githubpages&logoColor=white)](https://KarineSilvaCodes.github.io)
 
 ### Prévia do Site
-### Prévia do Site
 
 <p align="center">
   <img 
