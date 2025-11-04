@@ -13,7 +13,28 @@ O site está hospedado com GitHub Pages e pode ser acessado por qualquer pessoa 
 [![Acessar Site](https://img.shields.io/badge/Acessar%20Site-KarineSilvaCodes.github.io-a726aD?style=for-the-badge&logo=githubpages&logoColor=white)](https://KarineSilvaCodes.github.io)
 
 ### Prévia do Site
-![Prévia do site-portfólio da Karine Silva](img/screenshot.png)
+### Prévia do Site
+
+<p align="center">
+  <img 
+    src="./img/preview-home.png" 
+    alt="Prévia da Página Principal" 
+    width="260" 
+    hspace="10"
+  >
+  <img 
+    src="./img/preview-cv-dev.png" 
+    alt="Prévia do Currículo de Dev" 
+    width="260" 
+    hspace="10"
+  >
+  <img 
+    src="./img/preview-cv-qa.png" 
+    alt="Prévia do Currículo de QA" 
+    width="260" 
+    hspace="10"
+  >
+</p>
 
 ---
 
