@@ -14,7 +14,6 @@ O site está hospedado com GitHub Pages e pode ser acessado por qualquer pessoa 
 
 ### Prévia do Site
 ![Prévia do site-portfólio da Karine Silva](img/screenshot.png)
-*(Sugestão: Tire um print da sua página principal, suba para a pasta do projeto e troque o link acima!)*
 
 ---
 
